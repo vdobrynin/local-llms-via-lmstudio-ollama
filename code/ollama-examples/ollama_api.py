@@ -28,7 +28,7 @@ def generate_response(model_name, prompt_text):
 
 
 if __name__ == "__main__":
-    model = "gemma3:12b-it-qat"
+    model = "google/gemma-3-27b"
     prompt = input("Enter your prompt: ")
 
     result = generate_response(model, prompt)

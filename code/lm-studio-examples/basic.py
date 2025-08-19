@@ -2,11 +2,11 @@ from openai import OpenAI
 
 client = OpenAI(
   base_url="http://localhost:1234/v1",
-  api_key="something-doesnt-matter",
+  api_key="something-doesn't-matter",
 )
 
 response = client.chat.completions.create(
-  model="gemma-3-12b-it-qat",
+  model="google/gemma-3-27b",
   messages=[
     {
       "role": "system",

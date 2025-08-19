@@ -3,7 +3,7 @@ import sys
 
 client = OpenAI(
     base_url="http://localhost:11434/v1",
-    api_key="something-doesnt-matter",
+    api_key="something-doesn't-matter",
 )
 
 print("Chat with the local model (type 'quit' to exit)")
@@ -15,7 +15,7 @@ while True:
 
     try:
         stream = client.chat.completions.create(
-            model="gemma3:12b-it-qat",
+            model="google/gemma-3-27b",
             messages=[{"role": "user", "content": user_input}],
             stream=True,
             temperature=0.7,

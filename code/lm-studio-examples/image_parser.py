@@ -4,7 +4,7 @@ import base64
 
 client = OpenAI(
   base_url="http://localhost:1234/v1",
-  api_key="something-doesnt-matter",
+  api_key="something-doesn't-matter",
 )
 
 image_folder = "images"
@@ -39,7 +39,7 @@ for image_file in image_files:
 
   try:
     response = client.chat.completions.create(
-      model="gemma-3-12b-it-qat",
+      model="google/gemma-3-27b",
       messages=[
         {
           "role": "user",

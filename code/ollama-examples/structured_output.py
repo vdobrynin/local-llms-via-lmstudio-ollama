@@ -3,7 +3,7 @@ import json
 
 url = "http://localhost:11434/api/generate"
 
-model_name = "gemma3:12b-it-qat" 
+model_name = "google/gemma-3-27b" 
 
 prompt = """
 Generate a JSON list containing 3 fictional users.
