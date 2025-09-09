@@ -15,7 +15,7 @@ while True:
 
     try:
         stream = client.chat.completions.create(
-            model="qwen3:32b-q4_K_M",
+            model="gemma3:27b-it-qat",
             messages=[{"role": "user", "content": user_input}],
             stream=True,
             temperature=0.7,

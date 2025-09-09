@@ -3,7 +3,7 @@ import json
 
 url = "http://localhost:11434/api/generate"
 
-model_name = "qwen3:32b-q4_K_M" 
+model_name = "gemma3:27b-it-qat" 
 
 prompt = """
 Generate a JSON list containing 3 fictional users.

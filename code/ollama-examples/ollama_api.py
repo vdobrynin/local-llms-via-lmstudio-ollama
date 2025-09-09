@@ -26,7 +26,7 @@ def generate_response(model_name, prompt_text):
         return None
 
 if __name__ == "__main__":
-    model = "qwen3:32b-q4_K_M"
+    model = "gemma3:27b-it-qat"
     prompt = input("Enter your prompt: ")
 
     result = generate_response(model, prompt)
