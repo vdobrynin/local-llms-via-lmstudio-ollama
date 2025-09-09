@@ -34,7 +34,6 @@ payload = {
 
 headers = {'Content-Type': 'application/json'}
 try:
-    
     response = requests.post(url, headers=headers, data=json.dumps(payload))
     response.raise_for_status() 
     
