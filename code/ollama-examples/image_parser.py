@@ -39,7 +39,7 @@ for image_file in image_files:
 
   try:
     response = client.chat.completions.create(
-      model="google/gemma-3-27b",
+      model="qwen3:32b-q4_K_M",
       messages=[
         {
           "role": "user",

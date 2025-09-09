@@ -2,7 +2,6 @@ import json
 
 import requests
 
-
 def generate_response(model_name, prompt_text):
     """
     Generates a response from the Ollama API using the /api/generate endpoint.
@@ -26,9 +25,8 @@ def generate_response(model_name, prompt_text):
         print(f"Error contacting Ollama API: {e}")
         return None
 
-
 if __name__ == "__main__":
-    model = "google/gemma-3-27b"
+    model = "qwen3:32b-q4_K_M"
     prompt = input("Enter your prompt: ")
 
     result = generate_response(model, prompt)
